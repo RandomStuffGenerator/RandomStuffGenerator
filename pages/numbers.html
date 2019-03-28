@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Random Stuff Generator</title>
+    <meta
+      name="description"
+      content="Create lists of random items,including names, writing inspiration ideas, numbers and places."
+    />
+    <meta name="author" content="Matthew Williams" />
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../css/generator_style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <!--Header-->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-danger">
+      <a href="../index.html" class="navbar-brand"
+        ><img src="../img/logo.png" class="img-fluid d-block logo"
+      /></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navlinks"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-collapse collapse" id="navlinks">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="../index.html"
+              >Home<span class="sr-only">Home</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../pages/faq.html">FAQ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../pages/about.html">About</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!--Main Content-->
+    <div class="container text-dark">
+      <div class="row">
+        <!--Column 1-->
+        <div class="col-12">
+          <div class="titleWrapper">
+            <i class="fas fa-hashtag"></i>
+            <h1>Numbers</h1>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-8 firstCol" id="generator">
+          <div class="row generator">
+            <div class="col-sm-12 col-md-6" id="formOps">
+              <form class="controls">
+                <div class="form-group">
+                  <hr />
+                  <label class="col-form-label" for="quantityValue"
+                    >How many <strong>sets</strong> of numbers?</label
+                  >
+                  <input
+                    class="form-control"
+                    id="quantityValue"
+                    type="number"
+                    value="1"
+                    min="1"
+                    max="20"
+                  />
+                  <hr />
+                  <span>How many numbers per set?</span>
+                  <input
+                    class="number_sets form-control"
+                    id="amnt"
+                    type="number"
+                    value="10"
+                    min="1"
+                    max="9999"
+                  />
+                  <hr />
+                  <span class="sub_heading">Number range:</span>
+                  <span>Between </span>
+                  <input
+                    class="number_sets form-control2"
+                    id="rangeLower"
+                    type="number"
+                    value="1"
+                    min="1"
+                    max="9998"
+                  />
+                  <span> & </span>
+                  <input
+                    class="number_sets form-control2"
+                    id="rangeUpper"
+                    type="number"
+                    value="100"
+                    min="2"
+                    max="9999"
+                  />
+                  <hr />
+                  <label for="unique" class="hide" style="word-wrap:break-word">
+                    <input id="unique" type="checkbox" value="unique" />
+                    <span class="checkbox_label">Unique numbers only?</span>
+                  </label>
+                  <label for="prime" class="hide" style="word-wrap:break-word">
+                    <input id="prime" type="checkbox" value="prime" />
+                    <span class="checkbox_label">Prime numbers only?</span>
+                  </label>
+                  <label for="odd" style="word-wrap:break-word">
+                    <input type="radio" id="both" name="even_odd" checked>
+                    <span class="checkbox_label">Odd and Even numbers</span>
+                  </label>
+                  <label for="even" style="word-wrap:break-word">
+                    <input type="radio" id="even" name="even_odd">
+                    <span class="checkbox_label">Even numbers only</span>
+                  </label>
+                  <label for="odd" style="word-wrap:break-word">
+                    <input type="radio" id="odd" name="even_odd">
+                    <span class="checkbox_label">Odd numbers only</span>
+                  </label>
+                  <hr />
+                </div>
+                <button
+                  type="button"
+                  class="btn btn-danger btn-lg btn-block"
+                  id="generateButton"
+                >
+                  Generate ▼
+                </button>
+              </form>
+            </div>
+            <div class="col-sm-12 col-md-6" id="form_desc">
+              <hr />
+              This tool will generate story titles for you. The titles can
+              either be completely random or based on a format of your choosing.
+              <br />
+              <br />
+              To randomize words around an exisiting title, in the box type your
+              title inserting random
+              <span class="text-danger">NOUN</span>,
+              <span class="text-danger">VERB</span> and
+              <span class="text-danger">ADJECTIVE's</span>, using the buttons
+              underneath.
+              <br />
+              <br />
+              E.g. "The Curious +NOUN" will produce results that all start with
+              "The Curious" and have random nouns at the end.
+            </div>
+            <!--Results-->
+            <div class="col-12 box text-danger" id="results">
+              <hr />
+            </div>
+            <div class="col-sm-12 d-md-none" id="mobileAd2">
+              <img src="../img/ad4PH.jpg" class="d-block mx-auto" />
+            </div>
+          </div>
+        </div>
+        <!--Column 2-->
+        <div class="col-sm-12 d-md-none secondCol" id="mobileAd1">
+          <img src="../img/ad5PH.jpg" class="mx-auto d-block" />
+        </div>
+        <div class="col-md-4 d-none d-md-block secondCol" id="ad2">
+          <div id="tallAd">
+            <img src="../img/ad3PH.jpg" class="mx-auto d-block" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Ad Code-->
+    <div class="col-12 bottomBox box">
+      <div class="col-md-12 d-none d-md-block">
+        <img src="../img/ad2PH.jpg" class="d-block mx-auto" />
+      </div>
+    </div>
+
+    <!--Footer-->
+    <div class="container-fluid full-width-footer navbar-fixed-bottom">
+      <footer class="page-footer font-small footer-dark">
+        <!--Copyright-->
+        <div class="footer-copyright text-center py-3 danger-color">
+          © 2019 Copyright:
+          <a href="https://www.RandomStuff.com/">RandomStuff.com</a>
+        </div>
+        <!--Copyright-->
+        <!--Privacy Policy-->
+        <div class=""></div>
+      </footer>
+    </div>
+
+    <!-- Start of Scripts -->
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/bootstrap.js"></script>
+    <script src="../js/numbers.js"></script>
+  </body>
+</html>

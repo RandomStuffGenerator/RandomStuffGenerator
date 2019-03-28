@@ -1,0 +1,252 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    font-size: 15.5px;
+}
+
+.hover {
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+}
+
+.navbar {
+    border-bottom: 10px solid #e15260;
+    margin-bottom: 20px;
+}
+
+.navbar ul {
+    margin-right: 5%;
+}
+
+.logo {
+    max-width: 40vw;
+    max-height: 100vh;
+}
+
+h1 {
+    display: inline;
+}
+
+i {
+    margin-right: 10px;
+    font-size: 3em;
+}
+
+#boxContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+#boxInnerContainer {
+    margin-top: auto;
+}
+
+.box {
+    margin-top: 0px;
+    border: 0px dashed darkgrey;
+}
+
+.bottomBox {
+    margin-top: 10px;
+    padding-bottom: 15px;
+}
+
+.full-width-footer {
+    margin-top: 20px;
+    background-color: #dc3545;
+    border-top: 10px solid #e15260;
+    color: #fff;
+}
+
+.full-width-footer a {
+    color: #fff;
+}
+
+.main-text {
+    text-align: justify;
+    color: #dc3545;
+    font-weight: 700;
+}
+
+.main-text section {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 15%;
+    padding-right: 15%;
+    display: inline-block;
+    font-size: 0.9em;
+}
+
+.firstCol {
+    border: 0px solid blue;
+}
+
+.secondCol {
+    border: 0px solid red;
+}
+
+#tallAd {
+    border: 0px solid pink;
+    position: static;
+}
+
+#form_desc {
+    text-align: justify;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="radio"] {
+    background: #f1f1f1 !important;
+    border: 0 !important;
+    box-shadow: none !important;
+}
+
+#formatted_title {
+    font-size: 11px;
+    margin-bottom: 10px;
+    height: 50px;
+}
+
+.sub_heading {
+    display: block;
+    clear: right;
+}
+
+.form-control2 {
+    display: inline-block;
+    padding: .375rem .75rem;
+    width: auto;
+    margin-top: 10px;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.checkbox_label {
+    margin-right: 10px;
+}
+
+.hide {
+    display: none;
+}
+
+[type="checkbox"],
+[type="radio"]{
+    vertical-align:middle;
+    zoom: 1.3;
+}
+
+.word_btn {
+    height: 30px;
+    font-size: 0.8em;
+}
+
+.tile {
+    background-color: red;
+    color: white;
+}
+
+#results {
+    margin-top: 15px;
+}
+
+#results ol {
+    counter-reset: li;
+    /* Initiate a counter */
+    list-style: none;
+    /* Remove default numbering */
+    *list-style: decimal;
+    /* Keep using default numbering for IE6/7 */
+    font: 14px "trebuchet MS", "lucida sans";
+    padding: 0;
+    margin-bottom: 4em;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+#results li {
+    position: relative;
+    display: block;
+    padding: 0.4em 0.4em 0.4em 0.8em;
+    *padding: 0.4em;
+    margin: 0.5em 0 0.5em 2.5em;
+    background: #f1f1f1;
+    color: #222;
+    text-decoration: none;
+    font-size: 1.5em;
+    border-radius: 5px;
+}
+
+#results li:before {
+    content: counter(li);
+    counter-increment: li;
+    position: absolute;
+    left: -2.5em;
+    top: 50%;
+    margin-top: -1em;
+    background: #dc3545;
+    color: #fff;
+    height: 2em;
+    width: 2em;
+    line-height: 2em;
+    text-align: center;
+    border-radius: 5px;
+}
+
+/**MEDIA QUERIES**/
+
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 13px !important;
+    }
+    .navbar {
+        margin-bottom: 10px;
+    }
+    input {
+        font-size: 13px !important;
+    }
+    .titleWrapper {
+        text-align: center;
+    }
+    i {
+        font-size: 2em;
+    }
+    hr {
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+    h1 {
+        display: inline-block;
+        text-align: center;
+        font-size: 2.2em;
+        font-weight: bold;
+    }
+    li {
+        font-size: 1.1em !important;
+        font-weight: bold;
+    }
+    #contextIcon {}
+    #generator {
+        order: 2;
+    }
+    #mobileAd1 {
+        order: 1;
+    }
+    #mobileAd2 {
+        order: 5;
+        margin-top: 15px;
+    }
+    #formOps {
+        order: 4;
+    }
+    #form_desc {
+        order: 3;
+    }
+    #results {
+        order: 6;
+    }
+}

@@ -1,0 +1,129 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Random Stuff Generator</title>
+  <meta name="description" content="Create lists of random items,including names, writing inspiration ideas, numbers and places.">
+  <meta name="author" content="Matthew Williams">
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/generator_style.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+</head>
+
+<body>
+
+<!--Header-->
+<nav class="navbar navbar-expand-sm navbar-dark bg-danger">
+  <a href="../index.html" class="navbar-brand"><img src="../img/logo.png" class="img-fluid d-block logo"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navlinks">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+  <div class="navbar-collapse collapse" id="navlinks">
+      <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+              <a class="nav-link" href="../index.html">Home<span class="sr-only">Home</span></a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="../pages/faq.html">FAQ</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="../pages/about.html">About</a>
+          </li>
+      </ul>
+  </div>
+</nav>
+
+<!--Main Content-->
+<div class="container text-dark">
+  <div class="row">
+<!--Column 1-->
+    <div class="col-12">
+      <div class="titleWrapper">
+          <i class="fas fa-dog" id="contextIcon"></i>
+          <h1>Dog Names</h1>
+      </div>
+
+    </div>
+    <div class="col-sm-12 col-md-6 firstCol" id="generator">
+      <div class="row generator">
+        <div class="col-sm-12 col-md-6" id="formOps">
+          <div class="form-group">
+            <form class="controls">
+              <hr>
+              <label class="col-form-label" for="quantityValue">How many names?</label>
+              <input class="form-control" id="quantityValue" type="number" value="5" min="1" max="20">
+              <hr>
+              <label class="col-form-label" for="random_surname">Random Surname?</label>
+              <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                <label class="btn btn-danger active">
+                  <input type="radio" name="surnameOption" id="surnameNo" autocomplete="off" .active>No
+                </label>
+                <label class="btn btn-danger">
+                  <input type="radio" name="surnameOption" id="surnameYes" autocomplete="off" >
+                  Yes
+                </label>
+              </div>
+              <hr>
+              <label class="col-form-label" for="append_surname">Append Surname/Middle-Name</label>
+              <input class="form-control" id="appendSurname" type="text" maxlength="20"></input>
+              <hr>
+            </div>
+            <button type="button" class="btn btn-danger btn-lg btn-block" id="generateButton">Generate ▼</button>
+          </form>
+        </div>
+        <div class="col-sm-12 col-md-6" id="form_desc">
+          <hr>
+          This tool will generate a list of male names for you.  This can help to choose a baby boy name by appending your surname to the results, or can be useful if you're looking for a character name for a story by adding adding random surnames to the generated first names.
+        </div>
+<!--Results-->
+        <div class="col-12 box text-danger" id="results">
+          <hr>
+        </div>                
+        <div class="col-sm-12 d-md-none" id="mobileAd2">
+          <img src="../img/ad4PH.jpg" class="d-block mx-auto">
+        </div> 
+      </div>      
+    </div>
+<!--Column 2-->
+  <div class="col-sm-12 d-md-none secondCol" id="mobileAd1">
+    <img src="../img/ad5PH.jpg" class="mx-auto d-block">
+  </div>
+  <div class="col-md-6 d-none d-md-block secondCol" id="ad2">
+    <div id="tallAd">
+        <img src="../img/ad3PH.jpg" class="mx-auto d-block">
+    </div>
+  </div>
+  </div>
+</div>
+
+<!--Ad Code--> 
+<div class="col-12 bottomBox box">      
+    <div class="col-md-12 d-none d-md-block">
+      <img src="../img/ad2PH.jpg" class="d-block mx-auto">
+    </div> 
+</div>
+
+<!--Footer-->
+<div class="container-fluid full-width-footer navbar-fixed-bottom">
+  <footer class="page-footer font-small footer-dark">
+    <!--Copyright-->
+    <div class="footer-copyright text-center py-3 danger-color">
+      © 2019 Copyright:
+      <a href="https://www.RandomStuff.com/">RandomStuff.com</a>
+    </div>
+<!--Copyright-->
+<!--Privacy Policy-->
+    <div class=""></div>
+  </footer>
+</div>
+
+<!-- Start of Scripts -->      
+  <script src="../js/jquery-3.3.1.min.js"></script>
+  <script src="../js/bootstrap.js"></script>
+  <script src="../js/dog_names.js"></script>
+</body>
+</html>
