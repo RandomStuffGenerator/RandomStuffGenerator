@@ -1,5 +1,4 @@
-{
-  "description": "A list of condiments",
+[
   "arr": [
     "Aioli",
     "Ajvar",
@@ -101,4 +100,4 @@
     "Za'atar",
     "Zacuscă"
   ]
-}
+]
