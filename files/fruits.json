@@ -1,5 +1,4 @@
-{
-  "description": "A list of fruits.",
+[
     "arr": [
         "apple",
         "apricot",
@@ -83,4 +82,4 @@
         "ugli fruit",
         "watermelon"
     ]
-}
+]
