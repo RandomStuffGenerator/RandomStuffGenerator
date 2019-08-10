@@ -1,6 +1,6 @@
 {
   "description": "A list of condiments",
-  "condiments": [
+  "arr": [
     "Aioli",
     "Ajvar",
     "Amba",
