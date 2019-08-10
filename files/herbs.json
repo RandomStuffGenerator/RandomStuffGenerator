@@ -1,6 +1,6 @@
 {
 	"description": "A list of herbs and spices, and mixtures of the two.",
-	"arr": [
+	"herbs": [
 		"Angelica",
 		"Basil",
 		"Holy Basil",
@@ -51,7 +51,7 @@
 		"Sorrel",
 		"Tarragon",
 		"Thyme",
-		"Woodruff"
+		"Woodruff",
 		"Aonori",
 		"Ajwain",
 		"Allspice",
@@ -140,7 +140,7 @@
 		"Yuzu",
 		"Zedoary",
 		"Zereshk",
-		"Zest"
+		"Zest",
 		"Adjika",
 		"Advieh",
 		"Baharat",
