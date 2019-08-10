@@ -1,6 +1,6 @@
 {
 	"description": "A list of herbs and spices, and mixtures of the two.",
-	"herbsandspices": [
+	"arr": [
 		"Angelica",
 		"Basil",
 		"Holy Basil",
