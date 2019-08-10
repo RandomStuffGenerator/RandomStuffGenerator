@@ -1,6 +1,6 @@
 {
   "description": "A list of the top 1000 most appearing menu items from the 1850s to today from the New York Public Library's \"What's on the menu?\" project. Please credit The New York Public Library as source on any applications or publications. http://menus.nypl.org/data",
-  "menuItems": [
+  "miscfoods": [
     "Coffee",
     "Olives",
     "Celery",
